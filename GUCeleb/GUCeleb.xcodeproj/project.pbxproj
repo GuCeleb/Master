@@ -13,6 +13,7 @@
 		3533B8CB1BEBA69600F01A7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3533B8C91BEBA69600F01A7A /* Main.storyboard */; };
 		3533B8CD1BEBA69600F01A7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3533B8CC1BEBA69600F01A7A /* Assets.xcassets */; };
 		3533B8D01BEBA69600F01A7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3533B8CE1BEBA69600F01A7A /* LaunchScreen.storyboard */; };
+		C71A282E1BF4EF690068C66F /* 497.gif in Resources */ = {isa = PBXBuildFile; fileRef = C71A282D1BF4EF690068C66F /* 497.gif */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		3533B8CC1BEBA69600F01A7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3533B8CF1BEBA69600F01A7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3533B8D11BEBA69600F01A7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C71A282D1BF4EF690068C66F /* 497.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 497.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				3533B8C71BEBA69600F01A7A /* ViewController.m */,
 				3533B8C91BEBA69600F01A7A /* Main.storyboard */,
 				3533B8CC1BEBA69600F01A7A /* Assets.xcassets */,
+				C71A282D1BF4EF690068C66F /* 497.gif */,
 				3533B8CE1BEBA69600F01A7A /* LaunchScreen.storyboard */,
 				3533B8D11BEBA69600F01A7A /* Info.plist */,
 				3533B8C01BEBA69600F01A7A /* Supporting Files */,
@@ -139,6 +142,7 @@
 				3533B8D01BEBA69600F01A7A /* LaunchScreen.storyboard in Resources */,
 				3533B8CD1BEBA69600F01A7A /* Assets.xcassets in Resources */,
 				3533B8CB1BEBA69600F01A7A /* Main.storyboard in Resources */,
+				C71A282E1BF4EF690068C66F /* 497.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +302,7 @@
 				3533B8D61BEBA69600F01A7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
