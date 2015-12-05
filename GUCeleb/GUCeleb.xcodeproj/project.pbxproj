@@ -14,6 +14,7 @@
 		3533B8CD1BEBA69600F01A7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3533B8CC1BEBA69600F01A7A /* Assets.xcassets */; };
 		3533B8D01BEBA69600F01A7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3533B8CE1BEBA69600F01A7A /* LaunchScreen.storyboard */; };
 		C71A282E1BF4EF690068C66F /* 497.gif in Resources */ = {isa = PBXBuildFile; fileRef = C71A282D1BF4EF690068C66F /* 497.gif */; settings = {ASSET_TAGS = (); }; };
+		C740B7DE1C137B0F00EE99A1 /* ScoringObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C740B7DD1C137B0F00EE99A1 /* ScoringObject.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		3533B8CF1BEBA69600F01A7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3533B8D11BEBA69600F01A7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C71A282D1BF4EF690068C66F /* 497.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 497.gif; sourceTree = "<group>"; };
+		C740B7DC1C137B0F00EE99A1 /* ScoringObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoringObject.h; sourceTree = "<group>"; };
+		C740B7DD1C137B0F00EE99A1 /* ScoringObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoringObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +47,8 @@
 		3533B8B41BEBA69600F01A7A = {
 			isa = PBXGroup;
 			children = (
+				C740B7DC1C137B0F00EE99A1 /* ScoringObject.h */,
+				C740B7DD1C137B0F00EE99A1 /* ScoringObject.m */,
 				3533B8BF1BEBA69600F01A7A /* GUCeleb */,
 				3533B8BE1BEBA69600F01A7A /* Products */,
 			);
@@ -155,6 +160,7 @@
 			files = (
 				3533B8C81BEBA69600F01A7A /* ViewController.m in Sources */,
 				3533B8C51BEBA69600F01A7A /* AppDelegate.m in Sources */,
+				C740B7DE1C137B0F00EE99A1 /* ScoringObject.m in Sources */,
 				3533B8C21BEBA69600F01A7A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
