@@ -1,13 +1,20 @@
-//
-//  ScoringObject.m
-//  GUCeleb
-//
-//  Created by Masluf, Yousef A on 12/5/15.
-//  Copyright © 2015 Gannon.edu. All rights reserved.
-//
-
 #import "ScoringObject.h"
 
 @implementation ScoringObject
 
-@end
+
+- (id) initWithCoder: (NSCoder *)coder
+{
+    if (self = [super init])
+    {
+        self.Criteria = [coder decodeObjectForKey:@"Criteria"];
+        self.Sophisticated = [coder decodeObjectForKey:@"Sophisticated"];
+        self.Competent = [coder decodeObjectForKey:@"Competent"];
+        self.NotYetCompetent = [coder decodeObjectForKey:@"NotYetCompetent"];
+        self.Weight = [coder decodeIntForKey:@"Weight"];
+        self.Points = [coder decodeIntForKey:@"Points"];
+        
+    }
+    
+    return self;
+}
