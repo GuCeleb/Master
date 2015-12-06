@@ -22,4 +22,17 @@
     
     
 }
+- (void) encodeWithCoder: (NSCoder *)coder
+{
+    [coder encodeObject: self.Name forKey:@"Name"];
+    [coder encodeObject: self.Topic forKey:@"Topic"];
+    [coder encodeObject: self.Date forKey:@"Date"];
+    [coder encodeObject: self.Time forKey:@"Time"];
+    [coder encodeObject: self.Location forKey:@"Location"];
+    [coder encodeObject: self.image forKey:@"image"];
+    [coder encodeObject: self.rattings forKey:@"rattings"];
+    [coder encodeBool: self.isLiked forKey:@"isLiked"];
+    
+}
+
 @end
