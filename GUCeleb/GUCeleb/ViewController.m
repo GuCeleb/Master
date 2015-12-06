@@ -3,7 +3,7 @@
 //  GUCeleb
 //
 //  Created by Alotaibi, Waleed N on 11/5/15.
-//  Copyright © 2015 Gannon.edu. All rights reserved.
+//  Copyright © 2015 Gannon.edu. All rights reserved.2
 //
 
 #import "ViewController.h"
