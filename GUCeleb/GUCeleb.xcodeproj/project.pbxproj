@@ -13,6 +13,7 @@
 		3533B8CB1BEBA69600F01A7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3533B8C91BEBA69600F01A7A /* Main.storyboard */; };
 		3533B8CD1BEBA69600F01A7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3533B8CC1BEBA69600F01A7A /* Assets.xcassets */; };
 		3533B8D01BEBA69600F01A7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3533B8CE1BEBA69600F01A7A /* LaunchScreen.storyboard */; };
+		783154F91C1502A70033F6BF /* Judge.m in Sources */ = {isa = PBXBuildFile; fileRef = 783154F81C1502A70033F6BF /* Judge.m */; };
 		783A59AC1C13BCA100C2884C /* Presenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 783A59AB1C13BCA100C2884C /* Presenter.m */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,8 @@
 		3533B8CC1BEBA69600F01A7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3533B8CF1BEBA69600F01A7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3533B8D11BEBA69600F01A7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		783154F71C1502A70033F6BF /* Judge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Judge.h; sourceTree = "<group>"; };
+		783154F81C1502A70033F6BF /* Judge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Judge.m; sourceTree = "<group>"; };
 		783A59AA1C13BCA100C2884C /* Presenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Presenter.h; sourceTree = "<group>"; };
 		783A59AB1C13BCA100C2884C /* Presenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Presenter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -45,6 +48,8 @@
 		3533B8B41BEBA69600F01A7A = {
 			isa = PBXGroup;
 			children = (
+				783154F71C1502A70033F6BF /* Judge.h */,
+				783154F81C1502A70033F6BF /* Judge.m */,
 				783A59AA1C13BCA100C2884C /* Presenter.h */,
 				783A59AB1C13BCA100C2884C /* Presenter.m */,
 				3533B8BF1BEBA69600F01A7A /* GUCeleb */,
@@ -155,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3533B8C81BEBA69600F01A7A /* ViewController.m in Sources */,
+				783154F91C1502A70033F6BF /* Judge.m in Sources */,
 				3533B8C51BEBA69600F01A7A /* AppDelegate.m in Sources */,
 				783A59AC1C13BCA100C2884C /* Presenter.m in Sources */,
 				3533B8C21BEBA69600F01A7A /* main.m in Sources */,
