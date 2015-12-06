@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1551D5F51C13C55500648C3A /* Persistance.m in Sources */ = {isa = PBXBuildFile; fileRef = 1551D5F41C13C55500648C3A /* Persistance.m */; };
 		3533B8C21BEBA69600F01A7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3533B8C11BEBA69600F01A7A /* main.m */; };
 		3533B8C51BEBA69600F01A7A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3533B8C41BEBA69600F01A7A /* AppDelegate.m */; };
 		3533B8C81BEBA69600F01A7A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3533B8C71BEBA69600F01A7A /* ViewController.m */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1551D5F31C13C55500648C3A /* Persistance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Persistance.h; sourceTree = "<group>"; };
+		1551D5F41C13C55500648C3A /* Persistance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Persistance.m; sourceTree = "<group>"; };
 		3533B8BD1BEBA69600F01A7A /* GUCeleb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GUCeleb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3533B8C11BEBA69600F01A7A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3533B8C31BEBA69600F01A7A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -62,6 +65,8 @@
 				3533B8C41BEBA69600F01A7A /* AppDelegate.m */,
 				3533B8C61BEBA69600F01A7A /* ViewController.h */,
 				3533B8C71BEBA69600F01A7A /* ViewController.m */,
+				1551D5F31C13C55500648C3A /* Persistance.h */,
+				1551D5F41C13C55500648C3A /* Persistance.m */,
 				3533B8C91BEBA69600F01A7A /* Main.storyboard */,
 				3533B8CC1BEBA69600F01A7A /* Assets.xcassets */,
 				3533B8CE1BEBA69600F01A7A /* LaunchScreen.storyboard */,
@@ -150,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3533B8C81BEBA69600F01A7A /* ViewController.m in Sources */,
+				1551D5F51C13C55500648C3A /* Persistance.m in Sources */,
 				3533B8C51BEBA69600F01A7A /* AppDelegate.m in Sources */,
 				3533B8C21BEBA69600F01A7A /* main.m in Sources */,
 			);
@@ -298,6 +304,7 @@
 				3533B8D61BEBA69600F01A7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
