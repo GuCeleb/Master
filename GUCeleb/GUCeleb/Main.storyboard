@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--HomePage-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="HomePageVC" title="HomePage" id="BYZ-38-t0r" customClass="HomePageVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PE7-Ka-H89">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="128"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="eci-ze-4DN">
+                                        <rect key="frame" x="0.0" y="24" width="328" height="81"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.5490196078431373" green="0.098039215686274508" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="81" id="L0L-Sv-erC"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.54901960780000003" green="0.098039215690000001" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="eci-ze-4DN" firstAttribute="leading" secondItem="PE7-Ka-H89" secondAttribute="leading" id="4Ad-gh-gCF"/>
+                                    <constraint firstItem="eci-ze-4DN" firstAttribute="top" secondItem="PE7-Ka-H89" secondAttribute="top" constant="24" id="aRj-Fo-MJt"/>
+                                    <constraint firstAttribute="trailing" secondItem="eci-ze-4DN" secondAttribute="trailing" id="qb1-0w-26A"/>
+                                    <constraint firstAttribute="height" constant="128" id="xCK-KY-0cJ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ewe-7e-rYA">
+                                <rect key="frame" x="-4" y="128" width="328" height="440"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBY-T3-HJV">
+                                        <rect key="frame" x="54" y="195" width="220" height="50"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.54901960780000003" green="0.098039215690000001" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="220" id="MXu-Pk-ABq"/>
+                                            <constraint firstAttribute="height" constant="50" id="a9K-Mr-0Hn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                        <state key="normal" title="Judge">
+                                            <color key="titleColor" red="0.98039215690000003" green="0.81960784310000001" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tgy-CK-Cbe">
+                                        <rect key="frame" x="54" y="95" width="220" height="50"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.54901960780000003" green="0.098039215690000001" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="19l-ot-lkh"/>
+                                            <constraint firstAttribute="width" constant="220" id="ttE-5X-SXx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                        <state key="normal" title="Committee">
+                                            <color key="titleColor" red="0.98039215686274506" green="0.81960784313725488" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2c9-rc-Ctk">
+                                        <rect key="frame" x="54" y="295" width="220" height="50"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.54901960780000003" green="0.098039215690000001" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="220" id="9qQ-nK-VXM"/>
+                                            <constraint firstAttribute="height" constant="50" id="tHy-G7-KwM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                        <state key="normal" title="Students">
+                                            <color key="titleColor" red="0.98039215690000003" green="0.81960784310000001" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="2c9-rc-Ctk" firstAttribute="top" secondItem="oBY-T3-HJV" secondAttribute="bottom" constant="50" id="4Ui-re-x98"/>
+                                    <constraint firstItem="oBY-T3-HJV" firstAttribute="centerX" secondItem="ewe-7e-rYA" secondAttribute="centerX" id="7Xq-fA-W3k"/>
+                                    <constraint firstItem="oBY-T3-HJV" firstAttribute="centerY" secondItem="ewe-7e-rYA" secondAttribute="centerY" id="D1k-qp-Qrj"/>
+                                    <constraint firstItem="Tgy-CK-Cbe" firstAttribute="leading" secondItem="oBY-T3-HJV" secondAttribute="leading" id="hFJ-Zq-TcD"/>
+                                    <constraint firstItem="oBY-T3-HJV" firstAttribute="top" secondItem="Tgy-CK-Cbe" secondAttribute="bottom" constant="50" id="hGW-45-kkB"/>
+                                    <constraint firstItem="2c9-rc-Ctk" firstAttribute="leading" secondItem="oBY-T3-HJV" secondAttribute="leading" id="hPg-0V-Gg8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PE7-Ka-H89" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="2l5-wm-YxK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ewe-7e-rYA" secondAttribute="bottom" id="3Dw-1t-1eW"/>
+                            <constraint firstItem="PE7-Ka-H89" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="AfD-Q3-cIh"/>
+                            <constraint firstItem="ewe-7e-rYA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Qxs-NG-ehd"/>
+                            <constraint firstItem="ewe-7e-rYA" firstAttribute="top" secondItem="PE7-Ka-H89" secondAttribute="bottom" id="jaX-gd-drz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PE7-Ka-H89" secondAttribute="trailing" constant="-20" id="pbZ-gh-tcv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ewe-7e-rYA" secondAttribute="trailing" constant="-20" id="unn-Ht-AaX"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="btnCommittee" destination="Tgy-CK-Cbe" id="9Yx-ub-Y1x"/>
+                        <outlet property="btnJudge" destination="oBY-T3-HJV" id="Oel-r2-9Fa"/>
+                        <outlet property="btnStudents" destination="2c9-rc-Ctk" id="vI9-dK-jFF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="360" y="350"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="300" height="95"/>
+    </resources>
+</document>
