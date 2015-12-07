@@ -17,4 +17,12 @@
     
     
 }
+// Convert all values of the class to encapsulate in NSUserDefaults
+- (void) encodeWithCoder: (NSCoder *)coder
+{
+    [coder encodeObject: self.Name forKey:@"Name"];
+    [coder encodeObject: self.UserID forKey:@"UserID"];
+    [coder encodeObject: self.Password forKey:@"Password"];
+    
+}
 @end
