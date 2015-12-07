@@ -18,3 +18,15 @@
     
     return self;
 }
+// Convert all values of the class to encapsulate in NSUserDefaults
+- (void) encodeWithCoder: (NSCoder *)coder
+{
+    [coder encodeObject: self.Criteria forKey:@"Criteria"];
+    [coder encodeObject: self.Sophisticated forKey:@"Sophisticated"];
+    [coder encodeObject: self.Competent forKey:@"Competent"];
+    [coder encodeObject: self.NotYetCompetent forKey:@"NotYetCompetent"];
+    [coder encodeInt: self.Weight forKey:@"Weight"];
+    [coder encodeInt: self.Points forKey:@"Points"];
+    
+}
+@end
