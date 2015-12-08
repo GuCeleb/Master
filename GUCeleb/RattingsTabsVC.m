@@ -59,6 +59,84 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
+
+-(void)submitRate:(id) sender{
+    //    for(int i=0; i<platform.items.count; i++){
+    //        RattingCellVC *cell = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:i inSection:0]];
+    //        ScoringObject *obj = [platform.items objectAtIndex:i];
+    //        obj.Points = [cell.txtScore.text intValue];
+    //        [platform.items replaceObjectAtIndex:i withObject:obj];
+    //
+    //    }
+    //
+    //    for(int i=0; i<poster.items.count; i++){
+    //        RattingCellVC *cell = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:i inSection:1]];
+    //        ScoringObject *obj = [poster.items objectAtIndex:i];
+    //        obj.Points = [cell.txtScore.text intValue];
+    //        [poster.items replaceObjectAtIndex:i withObject:obj];
+    //
+    //    }
+    
+    NSArray *arr = [NSArray arrayWithObjects:platform, poster, nil];
+    
+    Persistance *settings = [Persistance sharedInstance];
+    Presenter *p = [settings.lstPresenters objectAtIndex:self.currentPresenterIndex];
+    [p.rattings setValue:arr forKey:self.currentJudge.Name];
+    [settings.lstPresenters replaceObjectAtIndex:self.currentPresenterIndex withObject:p];
+    [settings synchronize];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"RefreshList" object:nil];
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+-(void)closeMe:(id) sender{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return isPlatform ? platform.items.count : poster.items.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    RattingCellVC *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    
+    
+    // bind yourTextField to DownPicker
+    
+    if(_isStudent == NO){
+        cell.downPicker = [[DownPicker alloc] initWithTextField:cell.txtScore withData:options];
+        [cell.downPicker setPlaceholder:@"Rate"];
+        cell.downPicker.tag = indexPath.row;
+        cell.downPicker.tag = indexPath.row;
+        [cell.downPicker addTarget:self
+                            action:@selector(dp_Selected:)
+                  forControlEvents:UIControlEventValueChanged];
+    }
+    ScoringObject *obj;
+    
+    if(isPlatform == YES){
+        obj =[platform.items objectAtIndex:indexPath.row];
+    }else{
+        obj =[poster.items objectAtIndex:indexPath.row];
+        
+    }
+    cell.title.text =  [[NSString alloc] initWithFormat:@"%ld. %@", (indexPath.row +1), obj.Criteria];
+    cell.txtScore.text = [[NSString alloc] initWithFormat:@"%d",obj.Points];
+    cell.txtScore.enabled = !_isStudent;
+    
+    return cell;
+}
+
 // Submit rattings for the current presenter
 @end
 
