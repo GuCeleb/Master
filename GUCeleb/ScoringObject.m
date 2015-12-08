@@ -29,4 +29,19 @@
     [coder encodeInt: self.Points forKey:@"Points"];
     
 }
+
+
+- (id)initWithData:(NSString *) criteria textSophisticated:(NSString *) sophis textCompetent:(NSString *) comp
+textNotYetCompetent:(NSString *) notyet Weight:(int) weight{
+    self = [super init];
+    if (self) {
+        self.Criteria = criteria;
+        self.Sophisticated = sophis;
+        self.Competent = comp;
+        self.NotYetCompetent = notyet;
+        self.Weight = weight;
+        self.Points = 1;
+    }
+    return self;
+}
 @end
