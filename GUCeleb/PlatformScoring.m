@@ -6,13 +6,27 @@
 //  Copyright © 2015 Gannon.edu. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "ScoringObject.h"
+#import "PlatformScoring.h"
 
-@interface PlatformScoring : NSObject
-@property(nonatomic, retain) NSMutableArray *items;
+@implementation PlatformScoring
+@synthesize items;
 
+- (id) initWithCoder: (NSCoder *)coder
+{
+    if (self = [super init])
+    {
+        self.items = [coder decodeObjectForKey:@"items"];
+        
+    }
+    
+    return self;
+    
+    
+}
 
--(int) getTotal;
--(int) getScore;
-@end
+- (void) encodeWithCoder: (NSCoder *)coder
+{
+    [coder encodeObject: self.items forKey:@"items"];
+    
+}
+
