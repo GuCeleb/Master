@@ -8,8 +8,8 @@
 
 
 #import <Foundation/Foundation.h>
-//#import "Judge.h"
-//#import "Presenter.h"
+#import "Judge.h"
+#import "Presenter.h"
 
 @interface Persistance : NSObject
 
@@ -19,11 +19,8 @@
 @property (nonatomic, retain) NSString *comLogin;
 @property (nonatomic, retain) NSString *comPassword;
 
-
 -(void) synchronize;
 +(Persistance *) sharedInstance;
-
-
 
 @end
 

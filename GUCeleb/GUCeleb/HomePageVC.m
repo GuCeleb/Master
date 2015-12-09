@@ -7,7 +7,6 @@
 //
 
 
-
 #import "HomePageVC.h"
 
 @interface HomePageVC ()
@@ -34,9 +33,8 @@
 {
     return UIStatusBarStyleLightContent;
 }
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
+#pragma mark - Navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.

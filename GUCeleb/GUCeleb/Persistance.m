@@ -14,7 +14,6 @@ static Persistance *inst = nil;
 
 @implementation Persistance
 
-
 - (id) initWithCoder: (NSCoder *)coder
 {
     if (self = [super init])
@@ -29,8 +28,6 @@ static Persistance *inst = nil;
     }
     
     return self;
-    
-    
 }
 
 - (void) encodeWithCoder: (NSCoder *)coder
@@ -41,7 +38,6 @@ static Persistance *inst = nil;
     [coder encodeObject: self.lstStudents forKey:@"lstStudents"];
     [coder encodeObject: self.lstJudges forKey:@"lstJudges"];
     [coder encodeObject: self.lstPresenters forKey:@"lstPresenters"];
-    
 }
 
 
@@ -62,9 +58,7 @@ static Persistance *inst = nil;
             inst.lstStudents = [NSMutableArray new];
         }
     }
-    
     return inst;
-    
 }
 
 -(void) synchronize{
@@ -72,7 +66,6 @@ static Persistance *inst = nil;
     NSData *data = [NSKeyedArchiver archivedDataWithRootObject:self];
     [defaults setObject:data forKey:@"Persistance"];
     [defaults synchronize];
-    
 }
 
 @end
