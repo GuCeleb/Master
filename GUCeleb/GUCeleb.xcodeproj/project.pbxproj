@@ -15,6 +15,7 @@
 		3533B8D01BEBA69600F01A7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3533B8CE1BEBA69600F01A7A /* LaunchScreen.storyboard */; };
 		783154F91C1502A70033F6BF /* Judge.m in Sources */ = {isa = PBXBuildFile; fileRef = 783154F81C1502A70033F6BF /* Judge.m */; };
 		783A59AC1C13BCA100C2884C /* Presenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 783A59AB1C13BCA100C2884C /* Presenter.m */; };
+		78B1CF721C17D5190018152A /* ListPresentersVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B1CF711C17D5190018152A /* ListPresentersVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		783154F81C1502A70033F6BF /* Judge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Judge.m; sourceTree = "<group>"; };
 		783A59AA1C13BCA100C2884C /* Presenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Presenter.h; sourceTree = "<group>"; };
 		783A59AB1C13BCA100C2884C /* Presenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Presenter.m; sourceTree = "<group>"; };
+		78B1CF701C17D5190018152A /* ListPresentersVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListPresentersVC.h; sourceTree = "<group>"; };
+		78B1CF711C17D5190018152A /* ListPresentersVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListPresentersVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +55,8 @@
 				783154F81C1502A70033F6BF /* Judge.m */,
 				783A59AA1C13BCA100C2884C /* Presenter.h */,
 				783A59AB1C13BCA100C2884C /* Presenter.m */,
+				78B1CF701C17D5190018152A /* ListPresentersVC.h */,
+				78B1CF711C17D5190018152A /* ListPresentersVC.m */,
 				3533B8BF1BEBA69600F01A7A /* GUCeleb */,
 				3533B8BE1BEBA69600F01A7A /* Products */,
 			);
@@ -164,6 +169,7 @@
 				3533B8C51BEBA69600F01A7A /* AppDelegate.m in Sources */,
 				783A59AC1C13BCA100C2884C /* Presenter.m in Sources */,
 				3533B8C21BEBA69600F01A7A /* main.m in Sources */,
+				78B1CF721C17D5190018152A /* ListPresentersVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
