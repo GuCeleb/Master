@@ -13,6 +13,7 @@
 		3533B8CD1BEBA69600F01A7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3533B8CC1BEBA69600F01A7A /* Assets.xcassets */; };
 		3533B8D01BEBA69600F01A7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3533B8CE1BEBA69600F01A7A /* LaunchScreen.storyboard */; };
 		430241EB1C13796F00D9181F /* RattingsTabsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 430241EA1C13796F00D9181F /* RattingsTabsVC.m */; };
+		436038A01C18ECA800106D3B /* RattingCellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4360389F1C18ECA800106D3B /* RattingCellVC.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,8 @@
 		3533B8D11BEBA69600F01A7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		430241E91C13796F00D9181F /* RattingsTabsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RattingsTabsVC.h; sourceTree = "<group>"; };
 		430241EA1C13796F00D9181F /* RattingsTabsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RattingsTabsVC.m; sourceTree = "<group>"; };
+		4360389E1C18ECA800106D3B /* RattingCellVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RattingCellVC.h; sourceTree = "<group>"; };
+		4360389F1C18ECA800106D3B /* RattingCellVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RattingCellVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +46,8 @@
 		3533B8B41BEBA69600F01A7A = {
 			isa = PBXGroup;
 			children = (
+				4360389E1C18ECA800106D3B /* RattingCellVC.h */,
+				4360389F1C18ECA800106D3B /* RattingCellVC.m */,
 				430241E91C13796F00D9181F /* RattingsTabsVC.h */,
 				430241EA1C13796F00D9181F /* RattingsTabsVC.m */,
 				3533B8BF1BEBA69600F01A7A /* GUCeleb */,
@@ -152,6 +157,7 @@
 			files = (
 				3533B8C81BEBA69600F01A7A /* ViewController.m in Sources */,
 				3533B8C51BEBA69600F01A7A /* AppDelegate.m in Sources */,
+				436038A01C18ECA800106D3B /* RattingCellVC.m in Sources */,
 				430241EB1C13796F00D9181F /* RattingsTabsVC.m in Sources */,
 				3533B8C21BEBA69600F01A7A /* main.m in Sources */,
 			);
