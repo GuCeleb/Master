@@ -1,4 +1,10 @@
-
+//
+//  HomePageVC.h
+//  GUCeleb
+//
+//  Created by Jumana A. H. on 11/13/15.
+//  Copyright © 2015 Gannon.edu. All rights reserved.
+//
 
 #import "CommitteeLoginVC.h"
 #import "Persistance.h"

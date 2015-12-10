@@ -11,11 +11,11 @@
 		1551D5F81C13C91200648C3A /* HomePageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1551D5F71C13C91200648C3A /* HomePageVC.m */; };
 		1551D5FA1C13CB5900648C3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1551D5F91C13CB5900648C3A /* Main.storyboard */; };
 		1551D5FD1C164C2900648C3A /* CommitteeLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1551D5FC1C164C2900648C3A /* CommitteeLoginVC.m */; };
-		1551D60F1C16557600648C3A /* Celebrate_GannonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1551D60C1C16557600648C3A /* Celebrate_GannonUITests.m */; };
-		1551D6101C16557600648C3A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1551D60D1C16557600648C3A /* Info.plist */; };
 		1551D7021C17DA5D00648C3A /* Judge.m in Sources */ = {isa = PBXBuildFile; fileRef = 1551D6FD1C17DA5D00648C3A /* Judge.m */; };
 		1551D7031C17DA5D00648C3A /* Presenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1551D6FF1C17DA5D00648C3A /* Presenter.m */; };
 		1551D7041C17DA5D00648C3A /* ListPresentersVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1551D7011C17DA5D00648C3A /* ListPresentersVC.m */; };
+		15C2AB381C1A086100FC77E3 /* CommitteeHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C2AB371C1A086100FC77E3 /* CommitteeHomeVC.m */; };
+		15C867891C18CF95002A6237 /* RattingsTabsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C867881C18CF95002A6237 /* RattingsTabsVC.m */; };
 		3533B8C21BEBA69600F01A7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3533B8C11BEBA69600F01A7A /* main.m */; };
 		3533B8C51BEBA69600F01A7A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3533B8C41BEBA69600F01A7A /* AppDelegate.m */; };
 		3533B8CD1BEBA69600F01A7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3533B8CC1BEBA69600F01A7A /* Assets.xcassets */; };
@@ -30,14 +30,16 @@
 		1551D5F91C13CB5900648C3A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		1551D5FB1C164C2900648C3A /* CommitteeLoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommitteeLoginVC.h; sourceTree = "<group>"; };
 		1551D5FC1C164C2900648C3A /* CommitteeLoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommitteeLoginVC.m; sourceTree = "<group>"; };
-		1551D60C1C16557600648C3A /* Celebrate_GannonUITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Celebrate_GannonUITests.m; sourceTree = "<group>"; };
-		1551D60D1C16557600648C3A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1551D6FC1C17DA5D00648C3A /* Judge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Judge.h; sourceTree = "<group>"; };
 		1551D6FD1C17DA5D00648C3A /* Judge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Judge.m; sourceTree = "<group>"; };
 		1551D6FE1C17DA5D00648C3A /* Presenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Presenter.h; sourceTree = "<group>"; };
 		1551D6FF1C17DA5D00648C3A /* Presenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Presenter.m; sourceTree = "<group>"; };
 		1551D7001C17DA5D00648C3A /* ListPresentersVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListPresentersVC.h; sourceTree = "<group>"; };
 		1551D7011C17DA5D00648C3A /* ListPresentersVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListPresentersVC.m; sourceTree = "<group>"; };
+		15C2AB361C1A086100FC77E3 /* CommitteeHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommitteeHomeVC.h; sourceTree = "<group>"; };
+		15C2AB371C1A086100FC77E3 /* CommitteeHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommitteeHomeVC.m; sourceTree = "<group>"; };
+		15C867871C18CF95002A6237 /* RattingsTabsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RattingsTabsVC.h; sourceTree = "<group>"; };
+		15C867881C18CF95002A6237 /* RattingsTabsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RattingsTabsVC.m; sourceTree = "<group>"; };
 		3533B8BD1BEBA69600F01A7A /* GUCeleb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GUCeleb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3533B8C11BEBA69600F01A7A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3533B8C31BEBA69600F01A7A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,21 +60,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1551D60E1C16557600648C3A /* Celebrate GannonUITests */ = {
-			isa = PBXGroup;
-			children = (
-				1551D60C1C16557600648C3A /* Celebrate_GannonUITests.m */,
-				1551D60D1C16557600648C3A /* Info.plist */,
-			);
-			name = "Celebrate GannonUITests";
-			path = "../../../../../Celebrate Gannon (1)/Celebrate GannonUITests";
-			sourceTree = "<group>";
-		};
 		3533B8B41BEBA69600F01A7A = {
 			isa = PBXGroup;
 			children = (
 				3533B8BF1BEBA69600F01A7A /* GUCeleb */,
-				1551D60E1C16557600648C3A /* Celebrate GannonUITests */,
 				3533B8BE1BEBA69600F01A7A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,8 +91,12 @@
 				1551D5F71C13C91200648C3A /* HomePageVC.m */,
 				1551D5FB1C164C2900648C3A /* CommitteeLoginVC.h */,
 				1551D5FC1C164C2900648C3A /* CommitteeLoginVC.m */,
+				15C2AB361C1A086100FC77E3 /* CommitteeHomeVC.h */,
+				15C2AB371C1A086100FC77E3 /* CommitteeHomeVC.m */,
 				1551D7001C17DA5D00648C3A /* ListPresentersVC.h */,
 				1551D7011C17DA5D00648C3A /* ListPresentersVC.m */,
+				15C867871C18CF95002A6237 /* RattingsTabsVC.h */,
+				15C867881C18CF95002A6237 /* RattingsTabsVC.m */,
 				1551D5F91C13CB5900648C3A /* Main.storyboard */,
 				3533B8CC1BEBA69600F01A7A /* Assets.xcassets */,
 				3533B8CE1BEBA69600F01A7A /* LaunchScreen.storyboard */,
@@ -150,6 +145,7 @@
 				TargetAttributes = {
 					3533B8BC1BEBA69600F01A7A = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 9UYBW25KV3;
 					};
 				};
 			};
@@ -176,7 +172,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1551D6101C16557600648C3A /* Info.plist in Resources */,
 				1551D5FA1C13CB5900648C3A /* Main.storyboard in Resources */,
 				3533B8D01BEBA69600F01A7A /* LaunchScreen.storyboard in Resources */,
 				3533B8CD1BEBA69600F01A7A /* Assets.xcassets in Resources */,
@@ -190,12 +185,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15C867891C18CF95002A6237 /* RattingsTabsVC.m in Sources */,
 				1551D5FD1C164C2900648C3A /* CommitteeLoginVC.m in Sources */,
 				1551D7021C17DA5D00648C3A /* Judge.m in Sources */,
+				15C2AB381C1A086100FC77E3 /* CommitteeHomeVC.m in Sources */,
 				1551D5F51C13C55500648C3A /* Persistance.m in Sources */,
 				1551D5F81C13C91200648C3A /* HomePageVC.m in Sources */,
 				3533B8C51BEBA69600F01A7A /* AppDelegate.m in Sources */,
-				1551D60F1C16557600648C3A /* Celebrate_GannonUITests.m in Sources */,
 				1551D7031C17DA5D00648C3A /* Presenter.m in Sources */,
 				3533B8C21BEBA69600F01A7A /* main.m in Sources */,
 				1551D7041C17DA5D00648C3A /* ListPresentersVC.m in Sources */,
@@ -300,10 +296,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = GUCeleb/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.gannon.cis.GUCeleb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -311,10 +310,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = GUCeleb/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.gannon.cis.GUCeleb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
