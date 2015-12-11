@@ -15,6 +15,8 @@
 		1551D7031C17DA5D00648C3A /* Presenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1551D6FF1C17DA5D00648C3A /* Presenter.m */; };
 		1551D7041C17DA5D00648C3A /* ListPresentersVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1551D7011C17DA5D00648C3A /* ListPresentersVC.m */; };
 		15C2AB381C1A086100FC77E3 /* CommitteeHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C2AB371C1A086100FC77E3 /* CommitteeHomeVC.m */; };
+		15C2AB3D1C1A08ED00FC77E3 /* StudentsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C2AB3A1C1A08ED00FC77E3 /* StudentsVC.m */; };
+		15C2AB3E1C1A08ED00FC77E3 /* RattingCellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C2AB3C1C1A08ED00FC77E3 /* RattingCellVC.m */; };
 		15C867891C18CF95002A6237 /* RattingsTabsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C867881C18CF95002A6237 /* RattingsTabsVC.m */; };
 		3533B8C21BEBA69600F01A7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3533B8C11BEBA69600F01A7A /* main.m */; };
 		3533B8C51BEBA69600F01A7A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3533B8C41BEBA69600F01A7A /* AppDelegate.m */; };
@@ -38,6 +40,10 @@
 		1551D7011C17DA5D00648C3A /* ListPresentersVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListPresentersVC.m; sourceTree = "<group>"; };
 		15C2AB361C1A086100FC77E3 /* CommitteeHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommitteeHomeVC.h; sourceTree = "<group>"; };
 		15C2AB371C1A086100FC77E3 /* CommitteeHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommitteeHomeVC.m; sourceTree = "<group>"; };
+		15C2AB391C1A08ED00FC77E3 /* StudentsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentsVC.h; sourceTree = "<group>"; };
+		15C2AB3A1C1A08ED00FC77E3 /* StudentsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentsVC.m; sourceTree = "<group>"; };
+		15C2AB3B1C1A08ED00FC77E3 /* RattingCellVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RattingCellVC.h; sourceTree = "<group>"; };
+		15C2AB3C1C1A08ED00FC77E3 /* RattingCellVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RattingCellVC.m; sourceTree = "<group>"; };
 		15C867871C18CF95002A6237 /* RattingsTabsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RattingsTabsVC.h; sourceTree = "<group>"; };
 		15C867881C18CF95002A6237 /* RattingsTabsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RattingsTabsVC.m; sourceTree = "<group>"; };
 		3533B8BD1BEBA69600F01A7A /* GUCeleb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GUCeleb.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +101,10 @@
 				15C2AB371C1A086100FC77E3 /* CommitteeHomeVC.m */,
 				1551D7001C17DA5D00648C3A /* ListPresentersVC.h */,
 				1551D7011C17DA5D00648C3A /* ListPresentersVC.m */,
+				15C2AB391C1A08ED00FC77E3 /* StudentsVC.h */,
+				15C2AB3A1C1A08ED00FC77E3 /* StudentsVC.m */,
+				15C2AB3B1C1A08ED00FC77E3 /* RattingCellVC.h */,
+				15C2AB3C1C1A08ED00FC77E3 /* RattingCellVC.m */,
 				15C867871C18CF95002A6237 /* RattingsTabsVC.h */,
 				15C867881C18CF95002A6237 /* RattingsTabsVC.m */,
 				1551D5F91C13CB5900648C3A /* Main.storyboard */,
@@ -185,8 +195,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15C2AB3E1C1A08ED00FC77E3 /* RattingCellVC.m in Sources */,
 				15C867891C18CF95002A6237 /* RattingsTabsVC.m in Sources */,
 				1551D5FD1C164C2900648C3A /* CommitteeLoginVC.m in Sources */,
+				15C2AB3D1C1A08ED00FC77E3 /* StudentsVC.m in Sources */,
 				1551D7021C17DA5D00648C3A /* Judge.m in Sources */,
 				15C2AB381C1A086100FC77E3 /* CommitteeHomeVC.m in Sources */,
 				1551D5F51C13C55500648C3A /* Persistance.m in Sources */,
