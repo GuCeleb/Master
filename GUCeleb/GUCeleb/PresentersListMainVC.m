@@ -1,28 +1,32 @@
-//
-//  StudentsVC.m
-//  GUCeleb
-//
-//  Created by McCracken, Andrew S on 12/10/15.
-//  Copyright © 2015 Gannon.edu. All rights reserved.
-//
-
-
-#import "StudentsVC.h"
+#import "PresentersListMainVC.h"
 #import "Presenter.h"
 #import "Persistance.h"
 #import "PresenterCell.h"
 #import "AddPresenterVC.h"
 #import "RattingsTabsVC.h"
 
-@implementation StudentsVC{
-    
-NSMutableArray *items;
+@interface PresentersListMainVC ()
+
+@end
+
+@implementation PresentersListMainVC{
+    NSMutableArray *items;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     items = [Persistance sharedInstance].lstPresenters;
     
+    
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateMe:) name:@"UpdatePresenters" object:nil];
+    
+    UIBarButtonItem *btn = [[UIBarButtonItem alloc] initWithTitle:@"Logout"
+                                                            style:UIBarButtonItemStylePlain target:self action:@selector(logout:)];;
+    btn.tintColor = [UIColor whiteColor];
+    self.navigationItem.leftBarButtonItem = btn;
+
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadAll:) name:@"RefreshList" object:nil];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -34,14 +38,20 @@ NSMutableArray *items;
 -(void)reloadAll:(NSNotification *) noti{
     items = [Persistance sharedInstance].lstPresenters;
     [self.tableView reloadData];
-    
+
     
 }
 
-- (IBAction)closeMe:(id)sender {
+
+-(void) logout:(id) sender{
     [self dismissViewControllerAnimated:YES completion:nil];
+    //    self.navigationController pop
 }
 
+-(void)updateMe:(NSNotification *) noti{
+    items = [Persistance sharedInstance].lstPresenters;
+    [self.tableView reloadData];
+}
 
 -(void) dismissMe:(id)sender{
     [self.navigationController popViewControllerAnimated:YES];
@@ -74,44 +84,21 @@ NSMutableArray *items;
     cell.lblRating.layer.borderColor = [cell.lblRating.textColor CGColor];
     cell.lblRating.layer.cornerRadius = 10;
     cell.lblRating.layer.borderWidth = 2;
-    cell.btnLike.selected = p.isLiked;
-    cell.btnLike.tag = indexPath.row;
-    
-    [cell.btnLike addTarget:self action:@selector(btnLikeClick:) forControlEvents:UIControlEventTouchDown];
-    
-    NSArray *values = [p.rattings allValues];
-
-    int totalScore = 0;
-    int earnedScore = 0;
-
-    for(int i=0; i<values.count; i++){
+    if([p.rattings objectForKey:self.currentJudge.Name] == nil){
+        cell.lblRating.text = @"Not Rated";
+    }else{
+        // Calculate accumulative Score
+        PlatformScoring *score1 = [((NSArray *)[p.rattings objectForKey:self.currentJudge.Name]) objectAtIndex:0];
+        PosterScoring *score2 = [((NSArray *)[p.rattings objectForKey:self.currentJudge.Name]) objectAtIndex:1];
         
-        PlatformScoring *score1 = [((NSArray *)[values objectAtIndex:i]) objectAtIndex:0];
-        PosterScoring *score2 = [((NSArray *)[values objectAtIndex:i]) objectAtIndex:1];
-        totalScore += [score1 getTotal] + [score2 getTotal];
-        earnedScore += [score1 getScore] + [score2 getScore];
+        int totalScore = [score1 getTotal] + [score2 getTotal];
+        int earnedScore = [score1 getScore] + [score2 getScore];
         
+        cell.lblRating.text = [[NSString alloc] initWithFormat:@"%d/%d", earnedScore, totalScore];
     }
-    
-    cell.lblRating.text = [[NSString alloc] initWithFormat:@"%d/%d", earnedScore, totalScore];
     return cell;
 }
 
--(void)btnLikeClick:(id)sender{
-    UIButton *btn = (UIButton *) sender;
-    Presenter *p =  [items objectAtIndex:btn.tag];
-    for(int i=0; i<items.count; i++){
-        Presenter *pp = [items objectAtIndex:i];
-        pp.isLiked = NO;
-    }
-    p.isLiked = !btn.selected;
-    Persistance *set = [Persistance sharedInstance];
-    set.lstPresenters = items;
-    [set synchronize];
-    
-    btn.selected = !btn.selected;
-    [self.tableView reloadData];
-}
 
 
 // Override to support conditional editing of the table view.
@@ -120,7 +107,7 @@ NSMutableArray *items;
     return YES;
 }
 
-//// Override to support editing the table view.
+// Override to support editing the table view.
 //- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
 //    if (editingStyle == UITableViewCellEditingStyleDelete) {
 //        // Delete the row from the data source
@@ -148,30 +135,30 @@ NSMutableArray *items;
  }
  */
 
-//- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
-//    if ([identifier isEqualToString:@"ShowRatting"]) {
-//        
-//        NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
-//        
-//        NSMutableDictionary *rattings = ((Presenter *)[items objectAtIndex:indexPath.row]).rattings;
-//        if([rattings objectForKey:self.currentJudge.Name] != nil){
-//            [[[UIAlertView alloc] initWithTitle:@"Rattings" message:@"You have already rated this presenter..." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil] show];
-//            return NO;
-//        }
-//    }
-//    
-//    return YES;
-//}
-//
-//
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
+    if ([identifier isEqualToString:@"ShowRatting"]) {
+        
+        NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
+
+        NSMutableDictionary *rattings = ((Presenter *)[items objectAtIndex:indexPath.row]).rattings;
+        if([rattings objectForKey:self.currentJudge.Name] != nil){
+            [[[UIAlertView alloc] initWithTitle:@"Rattings" message:@"You have already rated this presenter..." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil] show];
+            return NO;
+        }
+    }
+    
+    return YES;
+}
+
+
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:@"StudentView"])
+    if ([segue.identifier isEqualToString:@"ShowRatting"])
     {
         NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
         RattingsTabsVC *vc = (RattingsTabsVC *)segue.destinationViewController;
         vc.currentPresenterIndex = (int)indexPath.row;
-        vc.isStudent = YES;
+        vc.currentJudge = self.currentJudge;
     }
     
 }

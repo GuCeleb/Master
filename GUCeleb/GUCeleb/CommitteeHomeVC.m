@@ -1,5 +1,5 @@
 //
-//  HomePageVC.h
+//  CommitteeHomeVC.m
 //  GUCeleb
 //
 //  Created by Jumana A. H. on 11/20/15.

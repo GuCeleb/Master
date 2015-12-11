@@ -15,9 +15,14 @@
 		1551D7031C17DA5D00648C3A /* Presenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1551D6FF1C17DA5D00648C3A /* Presenter.m */; };
 		1551D7041C17DA5D00648C3A /* ListPresentersVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1551D7011C17DA5D00648C3A /* ListPresentersVC.m */; };
 		15C2AB381C1A086100FC77E3 /* CommitteeHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C2AB371C1A086100FC77E3 /* CommitteeHomeVC.m */; };
-		15C2AB3D1C1A08ED00FC77E3 /* StudentsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C2AB3A1C1A08ED00FC77E3 /* StudentsVC.m */; };
-		15C2AB3E1C1A08ED00FC77E3 /* RattingCellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C2AB3C1C1A08ED00FC77E3 /* RattingCellVC.m */; };
-		15C867891C18CF95002A6237 /* RattingsTabsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C867881C18CF95002A6237 /* RattingsTabsVC.m */; };
+		15C2AB491C1AA99E00FC77E3 /* AddPresenterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C2AB401C1AA99E00FC77E3 /* AddPresenterVC.m */; };
+		15C2AB4A1C1AA99E00FC77E3 /* PresenterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C2AB421C1AA99E00FC77E3 /* PresenterCell.m */; };
+		15C2AB4B1C1AA99E00FC77E3 /* AddJudgeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C2AB441C1AA99E00FC77E3 /* AddJudgeVC.m */; };
+		15C2AB4C1C1AA99E00FC77E3 /* ListJudgesVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C2AB461C1AA99E00FC77E3 /* ListJudgesVC.m */; };
+		15C2AB4D1C1AA99E00FC77E3 /* PresentersListMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C2AB481C1AA99E00FC77E3 /* PresentersListMainVC.m */; };
+		15C2AB591C1AAC9C00FC77E3 /* RattingsTabsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C2AB541C1AAC9C00FC77E3 /* RattingsTabsVC.m */; };
+		15C2AB5A1C1AAC9C00FC77E3 /* RattingCellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C2AB561C1AAC9C00FC77E3 /* RattingCellVC.m */; };
+		15C2AB5B1C1AAC9C00FC77E3 /* StudentsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C2AB581C1AAC9C00FC77E3 /* StudentsVC.m */; };
 		3533B8C21BEBA69600F01A7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3533B8C11BEBA69600F01A7A /* main.m */; };
 		3533B8C51BEBA69600F01A7A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3533B8C41BEBA69600F01A7A /* AppDelegate.m */; };
 		3533B8CD1BEBA69600F01A7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3533B8CC1BEBA69600F01A7A /* Assets.xcassets */; };
@@ -40,12 +45,22 @@
 		1551D7011C17DA5D00648C3A /* ListPresentersVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListPresentersVC.m; sourceTree = "<group>"; };
 		15C2AB361C1A086100FC77E3 /* CommitteeHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommitteeHomeVC.h; sourceTree = "<group>"; };
 		15C2AB371C1A086100FC77E3 /* CommitteeHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommitteeHomeVC.m; sourceTree = "<group>"; };
-		15C2AB391C1A08ED00FC77E3 /* StudentsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentsVC.h; sourceTree = "<group>"; };
-		15C2AB3A1C1A08ED00FC77E3 /* StudentsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentsVC.m; sourceTree = "<group>"; };
-		15C2AB3B1C1A08ED00FC77E3 /* RattingCellVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RattingCellVC.h; sourceTree = "<group>"; };
-		15C2AB3C1C1A08ED00FC77E3 /* RattingCellVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RattingCellVC.m; sourceTree = "<group>"; };
-		15C867871C18CF95002A6237 /* RattingsTabsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RattingsTabsVC.h; sourceTree = "<group>"; };
-		15C867881C18CF95002A6237 /* RattingsTabsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RattingsTabsVC.m; sourceTree = "<group>"; };
+		15C2AB3F1C1AA99E00FC77E3 /* AddPresenterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPresenterVC.h; sourceTree = "<group>"; };
+		15C2AB401C1AA99E00FC77E3 /* AddPresenterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPresenterVC.m; sourceTree = "<group>"; };
+		15C2AB411C1AA99E00FC77E3 /* PresenterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresenterCell.h; sourceTree = "<group>"; };
+		15C2AB421C1AA99E00FC77E3 /* PresenterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresenterCell.m; sourceTree = "<group>"; };
+		15C2AB431C1AA99E00FC77E3 /* AddJudgeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddJudgeVC.h; sourceTree = "<group>"; };
+		15C2AB441C1AA99E00FC77E3 /* AddJudgeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddJudgeVC.m; sourceTree = "<group>"; };
+		15C2AB451C1AA99E00FC77E3 /* ListJudgesVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListJudgesVC.h; sourceTree = "<group>"; };
+		15C2AB461C1AA99E00FC77E3 /* ListJudgesVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListJudgesVC.m; sourceTree = "<group>"; };
+		15C2AB471C1AA99E00FC77E3 /* PresentersListMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentersListMainVC.h; sourceTree = "<group>"; };
+		15C2AB481C1AA99E00FC77E3 /* PresentersListMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentersListMainVC.m; sourceTree = "<group>"; };
+		15C2AB531C1AAC9C00FC77E3 /* RattingsTabsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RattingsTabsVC.h; sourceTree = "<group>"; };
+		15C2AB541C1AAC9C00FC77E3 /* RattingsTabsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RattingsTabsVC.m; sourceTree = "<group>"; };
+		15C2AB551C1AAC9C00FC77E3 /* RattingCellVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RattingCellVC.h; sourceTree = "<group>"; };
+		15C2AB561C1AAC9C00FC77E3 /* RattingCellVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RattingCellVC.m; sourceTree = "<group>"; };
+		15C2AB571C1AAC9C00FC77E3 /* StudentsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentsVC.h; sourceTree = "<group>"; };
+		15C2AB581C1AAC9C00FC77E3 /* StudentsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentsVC.m; sourceTree = "<group>"; };
 		3533B8BD1BEBA69600F01A7A /* GUCeleb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GUCeleb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3533B8C11BEBA69600F01A7A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3533B8C31BEBA69600F01A7A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -66,6 +81,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15C2AB4E1C1AAA4300FC77E3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1551D5F61C13C91200648C3A /* HomePageVC.h */,
+				1551D5F71C13C91200648C3A /* HomePageVC.m */,
+				15C2AB571C1AAC9C00FC77E3 /* StudentsVC.h */,
+				15C2AB581C1AAC9C00FC77E3 /* StudentsVC.m */,
+				15C2AB511C1AAAEB00FC77E3 /* CommitteeVC */,
+				15C2AB501C1AAAA100FC77E3 /* JudgeVC */,
+				15C2AB4F1C1AAA7200FC77E3 /* PresenterVC */,
+				15C2AB521C1AAB0F00FC77E3 /* RattingVC */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		15C2AB4F1C1AAA7200FC77E3 /* PresenterVC */ = {
+			isa = PBXGroup;
+			children = (
+				15C2AB3F1C1AA99E00FC77E3 /* AddPresenterVC.h */,
+				15C2AB401C1AA99E00FC77E3 /* AddPresenterVC.m */,
+				15C2AB411C1AA99E00FC77E3 /* PresenterCell.h */,
+				15C2AB421C1AA99E00FC77E3 /* PresenterCell.m */,
+				15C2AB471C1AA99E00FC77E3 /* PresentersListMainVC.h */,
+				15C2AB481C1AA99E00FC77E3 /* PresentersListMainVC.m */,
+				1551D7001C17DA5D00648C3A /* ListPresentersVC.h */,
+				1551D7011C17DA5D00648C3A /* ListPresentersVC.m */,
+			);
+			name = PresenterVC;
+			sourceTree = "<group>";
+		};
+		15C2AB501C1AAAA100FC77E3 /* JudgeVC */ = {
+			isa = PBXGroup;
+			children = (
+				15C2AB431C1AA99E00FC77E3 /* AddJudgeVC.h */,
+				15C2AB441C1AA99E00FC77E3 /* AddJudgeVC.m */,
+				15C2AB451C1AA99E00FC77E3 /* ListJudgesVC.h */,
+				15C2AB461C1AA99E00FC77E3 /* ListJudgesVC.m */,
+			);
+			name = JudgeVC;
+			sourceTree = "<group>";
+		};
+		15C2AB511C1AAAEB00FC77E3 /* CommitteeVC */ = {
+			isa = PBXGroup;
+			children = (
+				1551D5FB1C164C2900648C3A /* CommitteeLoginVC.h */,
+				1551D5FC1C164C2900648C3A /* CommitteeLoginVC.m */,
+				15C2AB361C1A086100FC77E3 /* CommitteeHomeVC.h */,
+				15C2AB371C1A086100FC77E3 /* CommitteeHomeVC.m */,
+			);
+			name = CommitteeVC;
+			sourceTree = "<group>";
+		};
+		15C2AB521C1AAB0F00FC77E3 /* RattingVC */ = {
+			isa = PBXGroup;
+			children = (
+				15C2AB531C1AAC9C00FC77E3 /* RattingsTabsVC.h */,
+				15C2AB541C1AAC9C00FC77E3 /* RattingsTabsVC.m */,
+				15C2AB551C1AAC9C00FC77E3 /* RattingCellVC.h */,
+				15C2AB561C1AAC9C00FC77E3 /* RattingCellVC.m */,
+			);
+			name = RattingVC;
+			sourceTree = "<group>";
+		};
 		3533B8B41BEBA69600F01A7A = {
 			isa = PBXGroup;
 			children = (
@@ -93,20 +171,7 @@
 				1551D6FF1C17DA5D00648C3A /* Presenter.m */,
 				1551D5F31C13C55500648C3A /* Persistance.h */,
 				1551D5F41C13C55500648C3A /* Persistance.m */,
-				1551D5F61C13C91200648C3A /* HomePageVC.h */,
-				1551D5F71C13C91200648C3A /* HomePageVC.m */,
-				1551D5FB1C164C2900648C3A /* CommitteeLoginVC.h */,
-				1551D5FC1C164C2900648C3A /* CommitteeLoginVC.m */,
-				15C2AB361C1A086100FC77E3 /* CommitteeHomeVC.h */,
-				15C2AB371C1A086100FC77E3 /* CommitteeHomeVC.m */,
-				1551D7001C17DA5D00648C3A /* ListPresentersVC.h */,
-				1551D7011C17DA5D00648C3A /* ListPresentersVC.m */,
-				15C2AB391C1A08ED00FC77E3 /* StudentsVC.h */,
-				15C2AB3A1C1A08ED00FC77E3 /* StudentsVC.m */,
-				15C2AB3B1C1A08ED00FC77E3 /* RattingCellVC.h */,
-				15C2AB3C1C1A08ED00FC77E3 /* RattingCellVC.m */,
-				15C867871C18CF95002A6237 /* RattingsTabsVC.h */,
-				15C867881C18CF95002A6237 /* RattingsTabsVC.m */,
+				15C2AB4E1C1AAA4300FC77E3 /* ViewControllers */,
 				1551D5F91C13CB5900648C3A /* Main.storyboard */,
 				3533B8CC1BEBA69600F01A7A /* Assets.xcassets */,
 				3533B8CE1BEBA69600F01A7A /* LaunchScreen.storyboard */,
@@ -195,17 +260,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15C2AB3E1C1A08ED00FC77E3 /* RattingCellVC.m in Sources */,
-				15C867891C18CF95002A6237 /* RattingsTabsVC.m in Sources */,
+				15C2AB591C1AAC9C00FC77E3 /* RattingsTabsVC.m in Sources */,
+				15C2AB4C1C1AA99E00FC77E3 /* ListJudgesVC.m in Sources */,
+				15C2AB4D1C1AA99E00FC77E3 /* PresentersListMainVC.m in Sources */,
 				1551D5FD1C164C2900648C3A /* CommitteeLoginVC.m in Sources */,
-				15C2AB3D1C1A08ED00FC77E3 /* StudentsVC.m in Sources */,
 				1551D7021C17DA5D00648C3A /* Judge.m in Sources */,
 				15C2AB381C1A086100FC77E3 /* CommitteeHomeVC.m in Sources */,
+				15C2AB5B1C1AAC9C00FC77E3 /* StudentsVC.m in Sources */,
+				15C2AB491C1AA99E00FC77E3 /* AddPresenterVC.m in Sources */,
 				1551D5F51C13C55500648C3A /* Persistance.m in Sources */,
 				1551D5F81C13C91200648C3A /* HomePageVC.m in Sources */,
 				3533B8C51BEBA69600F01A7A /* AppDelegate.m in Sources */,
 				1551D7031C17DA5D00648C3A /* Presenter.m in Sources */,
+				15C2AB4B1C1AA99E00FC77E3 /* AddJudgeVC.m in Sources */,
+				15C2AB5A1C1AAC9C00FC77E3 /* RattingCellVC.m in Sources */,
 				3533B8C21BEBA69600F01A7A /* main.m in Sources */,
+				15C2AB4A1C1AA99E00FC77E3 /* PresenterCell.m in Sources */,
 				1551D7041C17DA5D00648C3A /* ListPresentersVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

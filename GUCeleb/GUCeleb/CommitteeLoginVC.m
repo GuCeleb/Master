@@ -1,5 +1,5 @@
 //
-//  HomePageVC.h
+//  CommitteeLoginVC.m
 //  GUCeleb
 //
 //  Created by Jumana A. H. on 11/13/15.
@@ -8,9 +8,7 @@
 
 #import "CommitteeLoginVC.h"
 #import "Persistance.h"
-
-// Need "PresentersListMainVC.h" from Waleed to import it here
-//#import "PresentersListMainVC.h"
+#import "PresentersListMainVC.h"
 
 @interface CommitteeLoginVC ()
 
