@@ -13,6 +13,7 @@
 		3533B8CD1BEBA69600F01A7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3533B8CC1BEBA69600F01A7A /* Assets.xcassets */; };
 		3533B8D01BEBA69600F01A7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3533B8CE1BEBA69600F01A7A /* LaunchScreen.storyboard */; };
 		68500DD81C1A788D005865D0 /* PosterScoring.m in Sources */ = {isa = PBXBuildFile; fileRef = 68500DD71C1A788D005865D0 /* PosterScoring.m */; settings = {ASSET_TAGS = (); }; };
+		68500DDE1C1A7A43005865D0 /* PresentersListMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 68500DDD1C1A7A43005865D0 /* PresentersListMainVC.m */; settings = {ASSET_TAGS = (); }; };
 		68E1D9711C17E6F00082F073 /* PlatformScoring.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E1D9701C17E6F00082F073 /* PlatformScoring.m */; settings = {ASSET_TAGS = (); }; };
 		C71A282E1BF4EF690068C66F /* 497.gif in Resources */ = {isa = PBXBuildFile; fileRef = C71A282D1BF4EF690068C66F /* 497.gif */; };
 		C740B7DE1C137B0F00EE99A1 /* ScoringObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C740B7DD1C137B0F00EE99A1 /* ScoringObject.m */; };
@@ -30,6 +31,8 @@
 		3533B8D11BEBA69600F01A7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68500DD61C1A788D005865D0 /* PosterScoring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PosterScoring.h; sourceTree = "<group>"; };
 		68500DD71C1A788D005865D0 /* PosterScoring.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PosterScoring.m; sourceTree = "<group>"; };
+		68500DDC1C1A7A43005865D0 /* PresentersListMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentersListMainVC.h; sourceTree = "<group>"; };
+		68500DDD1C1A7A43005865D0 /* PresentersListMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentersListMainVC.m; sourceTree = "<group>"; };
 		68E1D96F1C17E6F00082F073 /* PlatformScoring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlatformScoring.h; sourceTree = "<group>"; };
 		68E1D9701C17E6F00082F073 /* PlatformScoring.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlatformScoring.m; sourceTree = "<group>"; };
 		C71A282D1BF4EF690068C66F /* 497.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 497.gif; sourceTree = "<group>"; };
@@ -51,12 +54,14 @@
 		3533B8B41BEBA69600F01A7A = {
 			isa = PBXGroup;
 			children = (
+				68500DDC1C1A7A43005865D0 /* PresentersListMainVC.h */,
+				68500DDD1C1A7A43005865D0 /* PresentersListMainVC.m */,
 				68E1D96F1C17E6F00082F073 /* PlatformScoring.h */,
 				68E1D9701C17E6F00082F073 /* PlatformScoring.m */,
 				C740B7DC1C137B0F00EE99A1 /* ScoringObject.h */,
+				C740B7DD1C137B0F00EE99A1 /* ScoringObject.m */,
 				68500DD61C1A788D005865D0 /* PosterScoring.h */,
 				68500DD71C1A788D005865D0 /* PosterScoring.m */,
-				C740B7DD1C137B0F00EE99A1 /* ScoringObject.m */,
 				3533B8BF1BEBA69600F01A7A /* GUCeleb */,
 				3533B8BE1BEBA69600F01A7A /* Products */,
 			);
@@ -168,6 +173,7 @@
 				3533B8C81BEBA69600F01A7A /* ViewController.m in Sources */,
 				3533B8C51BEBA69600F01A7A /* AppDelegate.m in Sources */,
 				C740B7DE1C137B0F00EE99A1 /* ScoringObject.m in Sources */,
+				68500DDE1C1A7A43005865D0 /* PresentersListMainVC.m in Sources */,
 				68E1D9711C17E6F00082F073 /* PlatformScoring.m in Sources */,
 				3533B8C21BEBA69600F01A7A /* main.m in Sources */,
 			);
